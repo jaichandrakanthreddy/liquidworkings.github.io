@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,900|Quicksand:400,500,700');
+html, body {
+  /* Adjust font size */
+  -webkit-text-size-adjust: 100%;
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+}
+:root {
+  /* light background */
+  --primary-background: #FFFFFF;
+  --secondary-background: #FAFAFA;
+  /* dark background */
+  --primary-dark-background: #333638;
+  --secondary-dark-background: #212121;
+  /* dark text color */
+  --primary-color: #333638;
+  --primary-dark-color: #1A1D1F;
+  /* button colors */
+  --button-primary-color: #1E88E5;
+  --button-primary-hightlight-color: #233142;
+  --button-text-primary-color: #233142;
+}
+.border {
+  border: 1px solid red !important;
+}
+/* ===================================================================================== */
+/* buttons */
+/* ===================================================================================== */
+.btn-nav {
+  margin-left: 5px;
+  border-radius: 5px;
+  padding: 7px 12px;
+  font-size: 11px;
+}
+.btn-light.focus, .btn-light:focus {
+  box-shadow: none;
+}
+.btn-primary {
+  /*color: #000;*/
+  /*background-color: #fff;*/
+  border: none;
+  box-shadow: none;
+  padding: 7px 12px;
+}
+.btn-square {
+  border-radius: 0px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+.btn-round {
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.btn-border {
+  /*border: 1px solid var(--button-primary-hightlight-color);*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:hover {
+  color: #fff;
+  /*background-color: var(--button-primary-hightlight-color);
+  /*border-color: var(--button-primary-hightlight-color);*/
+  box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  /*background-color: var(--button-primary-hightlight-color);
+  /*border-color: var(--button-primary-hightlight-color);*/
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  .btn-round {
+    margin-left: 3px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+/* ===================================================================================== */
+/* navbar.html */
+/* ===================================================================================== */
+.navbar-container {
+  background-color: transparent;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(176, 176, 176, 0.61);
+}
+.navbar-container .navbar-brand {
+  font-size: 25px;
+  font-weight: 500;
+  color: #33D4DA;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+.navbar-container .navbar-brand:hover {
+  color: #33D4DA;
+}
+.navbar-container .navbar-nav .nav-item .nav-link {
+  /*border: 1px solid red;*/
+  color: #1ABBC1;
+  font-size: 15px;
+  font-weight: 600;
+  padding-right: 20px;
+  letter-spacing: 1px;
+}
+.navbar-container .navbar-nav .nav-item .nav-link:hover {
+  color: #33D4DA;
+}
+/* ===================================================================================== */
+/* footer.html */
+/* ===================================================================================== */
+.footer-container {
+  background: #233142;
+  color: #FFF;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer-brand {
+  font-size: 27px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 9px;
+  font-weight: 600;
+}
+.footer-brand:hover, .footer-link:hover, .footer-contact-link:hover {
+  color: #ccc;
+}
+.footer-brand-subtext {
+  color: #ccc;
+}
+.footer-link {
+  text-decoration: none !important;
+  font-size: 16px;
+  line-height: 36px;
+  color: #fff;
+}
+.footer-contact-link {
+  text-decoration: none !important;
+  color: #fff;
+}
+.footer-link i, .footer-contact-link i {
+  width: 20px;
+}
+.copyright-underline {
+  background: linear-gradient(rgba(255, 255, 255, 0.61) 50%, rgba(0, 0, 0, 0.61) 50%);
+  width: 100%;
+  height: 1px;
+  margin-top: 2px;
+}
+.copyright-text {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+.copyright-terms {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+.copyright-terms a {
+  text-decoration: none;
+  color: #fafafa;
+}
+.copyright-terms a:hover {
+  color: #ccc;
+}
+/* ===================================================================================== */
+/* index.html */
+/* ===================================================================================== */
+.index-hero-container {
+  height: 100vh;
+}
+.index-hero-container .left-panel {
+  background-image: url('https://caravel-assets.sgp1.digitaloceanspaces.com/web.keats/keats-hero-unit.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 550px;
+}
+.index-hero-container .right-panel {
+  padding: 170px 100px 0px 0px;
+  text-align: left;
+}
+.slide-bar {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.slide-bar .left-control {
+  position: absolute;
+  height: 70px;
+  left: 80px;
+  display: none;
+}
+.slide-bar .middle-panel {
+  position: absolute;
+  height: 70px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.slide-bar .right-control {
+  position: absolute;
+  height: 70px;
+  right: 80px;
+  display: none;
+}
+.slide-bar .carousel-item {
+  height: 70px;
+  font-size: 20px;
+}
+.slide-bar .carousel-item .carousel-item-text {
+  height: 70px;
+  text-align: center;
+  line-height: 3.5;
+}
+.way-of-learn-image {
+  background-image: url('https://d35aaqx5ub95lt.cloudfront.net/images/owl-happy.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+/* ===================================================================================== */
+/* about.html */
+/* ===================================================================================== */
+.about-hero-container {
+  height: 100vh;
+}
+.about-hero-container .left-panel {
+  background-image: url('https://caravel-assets.sgp1.digitaloceanspaces.com/web.keats/32627.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 700px;
+}
+.about-hero-container .right-panel {
+  padding: 10px 100px 0px 0px;
+  text-align: left;
+}
+.about-image-container {
+  width: 220px;
+  height: 220px;
+  /*background-image: url('https://caravel-assets.sgp1.digitaloceanspaces.com/web.keats/architecture-buildings-campus-220351.jpg');*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.about-image-content {
+  position: absolute;
+  width: 220px;
+  bottom: 0;
+  padding: 10px;
+  padding-left: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.61);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.about-content-name {
+  font-size: 17px;
+  font-weight: 500;
+}
+.about-content-subtext {
+  color: #717171;
+}
+/* ===================================================================================== */
+/* partnership.html */
+/* ===================================================================================== */
+.partner-hero-container {
+  height: 100vh;
+}
+.partner-hero-container .left-panel {
+  /*background-image: url('https://caravel-assets.sgp1.digitaloceanspaces.com/web.keats/university-background.png');*/
+  background-image: url('https://cdn.dribbble.com/users/879147/screenshots/4226486/long-term_partnership.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 650px;
+}
+.partner-hero-container .right-panel {
+  padding: 10px 100px 0px 0px;
+  text-align: left;
+}
+.partner-contact {
+  color: #717171;
+  font-weight: 500;
+}
+/* ===================================================================================== */
+/* partnership.html */
+/* ===================================================================================== */
+.job-hero-container {
+  height: 100vh;
+}
+.job-hero-container .left-panel {
+  /*background-image: url('https://caravel-assets.sgp1.digitaloceanspaces.com/web.keats/university-background.png');*/
+  background-image: url('https://caravel-assets.sgp1.digitaloceanspaces.com/web.keats/JOB.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px;
+}
+.job-hero-container .right-panel {
+  padding: 10px 100px 0px 0px;
+  text-align: left;
+}
+.job-contact {
+  color: #717171;
+  font-weight: 500;
+}
+/* ===================================================================================== */
+/* Privacy.html & terms.html */
+/* ===================================================================================== */
+.p-p-t {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.p-p-t .card{
+  padding: 20px; 
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px rgba(176, 176, 176, 0.61);
+}
+.p-p-t .card h3 {
+  padding-bottom: 15px;
+}
+.p-p-t .card h5 {
+  padding-bottom: 5px;
+}
+.p-p-t .card p {
+  padding-bottom: 5px;
+  padding-left: 20px;
+  color: #717171;
+}
+/* ===================================================================================== */
+/* mobile.html */
+/* ===================================================================================== */
+.mobile {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.mobile .card {
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px rgba(176, 176, 176, 0.61);
+}
+.mobile .card .card-body {
+  padding: 0px;
+  margin: 0px;
+}
+.mobile .card .card-body h2 {
+  text-align: center;
+  padding: 30px 0px;
+  background-color: #1ABBC1;
+  color: #fff;
+}
+.mobile .mobile-content {
+  padding: 40px 150px;
+  text-align: center;
+}
+.mobile .mobile-content h4 {
+  padding-bottom: 30px;
+}
+.mobile .card .card-body a {
+  background-color: #000;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0 8px;
+  padding: 2px 8px 7px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.mobile .card .card-body a .logo{
+  display: inline-block
+}
+.mobile .card .card-body a>span>span {
+  display: block;
+  font-size: 14px;  
+}
+.mobile .card .card-body a .text {
+  display: inline-block;
+  padding-left: 10px;
+}
+.back {
+  background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/about-sprite5.svg);
+  background-position: -796px -353px;
+  height: 141px;
+  width: 477px;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+@media (max-width: 767px) {
+  .mobile .mobile-content {
+    padding: 40px 40px;
+  }
+  .back {
+    margin-left: -60px;
+  }
+}
+/* ===================================================================================== */
+/* help.html */
+/* ===================================================================================== */
+.help {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.help .card {
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px rgba(176, 176, 176, 0.61);
+}
+/*custom radio buttons*/
+.custom-radio-buttons .label-container {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 18px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    height: 45px;
+    line-height: 2.3;
+    color: #fff;
+    font-weight: 600;
+}
+.custom-radio-buttons .label-container:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.custom-radio-buttons .label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    padding-top: 100px;
+}
+.custom-radio-buttons .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+.custom-radio-buttons .label-container:hover input ~ .checkmark {
+    /*background-color: #ccc;*/
+}
+.custom-radio-buttons .label-container input:checked ~ .checkmark {
+    background-color: transparent;
+}
+.custom-radio-buttons .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.custom-radio-buttons .label-container input:checked ~ .checkmark:after {
+    display: block;
+}
+.custom-radio-buttons .label-container .checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+}
+.custom-radio-buttons button {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #3B5998;
+  font-size: 20px;
+  font-weight: 500;
+}
+.custom-radio-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+}
+.custom-radio-buttons .btn-primary:not(:disabled):not(.disabled):active {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+
+/* course arena*/
+
+.course-arena .left-panel {
+  border-right: 1px solid #fff;
+  padding: 10px 50px 10px 50px;
+  color: #fff;
+}
+.course-arena .right-panel {
+  border-left: 1px solid #fff;
+  padding: 10px 50px 10px 50px;
+  color: #fff;
+}
+.course-arena .left-panel h2, .course-arena .right-panel h2 {
+  font-size: 30px;
+}
+.course-arena .left-panel i, .course-arena .right-panel i {
+  font-size: 125px;
+}
+.course-arena .left-panel button, .course-arena .right-panel button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.course-arena .left-panel button:hover, .course-arena .right-panel button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.course-arena .btn-primary:not(:disabled):not(.disabled):active {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+/*social-arena*/
+.social-arena h1 {
+  color: #fff;
+}
+.social-arena button i {
+  float: left;
+  padding-top: 3px;
+  padding-right: 10px;
+  font-size: 23px;
+}
+.social-arena button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.social-arena .btn-social-g, .social-arena .btn-social-f {
+  background-color: #fff;
+}
+.social-arena .btn-social-g {
+  color: #1DA1F2;
+}
+.social-arena .btn-social-f {
+  color: #3B5998;
+}
+.social-arena .btn-social-g:hover, .social-arena .btn-social-f:hover {
+  color: #fff;
+}
+.social-arena button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+}
+.social-arena .btn-primary:not(:disabled):not(.disabled):active {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+
+
+
+
+
+
+
+
