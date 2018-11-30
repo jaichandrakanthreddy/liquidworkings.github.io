@@ -53,6 +53,49 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none;
   padding: 7px 12px;
 }
+.btn-index {
+  width: 360px;
+  margin-top: 30px;
+  height: 70px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 360px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  transition: 0.3s ease background-color, 0.3s ease box-shadow, 0.3s ease transform, 0.3s ease color;
+}
+.btn-index:hover {
+  background-color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+  color: #3b95ff;
+}
+.btn-index-nav {
+  width: 100px;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  transition: 0.3s ease background-color, 0.3s ease box-shadow, 0.3s ease transform, 0.3s ease color;
+}
+.btn-index-nav:hover {
+  background-color: #fff !important;
+  transform: translateY(-2px);
+  color: #3b95ff !important;
+}
 .btn-square {
   border-radius: 0px;
   padding: 10px 15px;
@@ -91,33 +134,25 @@ h1, h2, h3, h4, h5, h6 {
 /* navbar.html */
 /* ===================================================================================== */
 .navbar-container {
-  background-color: #fff;
+  background-color: transparent;
   z-index: 9999;
   position: absolute;
   width: 100%;
-  box-shadow: 0px 0px 5px rgba(176, 176, 176, 0.61);
-}
-.navbar-container .navbar-brand {
-  font-size: 25px;
-  font-weight: 500;
-  color: #33D4DA;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 15px;
+  padding-top: 25px;
+  /*box-shadow: 0px 0px 5px rgba(176, 176, 176, 0.61);*/
 }
 .navbar-container .navbar-brand:hover {
-  color: #33D4DA;
+  /*color: #33D4DA;*/
 }
 .navbar-container .navbar-nav .nav-item .nav-link {
-  /*border: 1px solid red;*/
-  color: #1ABBC1;
+  color: #fff;
   font-size: 15px;
-  font-weight: 600;
-  padding-right: 20px;
-  letter-spacing: 1px;
+  font-weight: 500;
+  margin-right: 20px;
+  letter-spacing: 1.5px;
 }
 .navbar-container .navbar-nav .nav-item .nav-link:hover {
-  color: #33D4DA;
+  opacity: .75;
 }
 /* ===================================================================================== */
 /* footer.html */
@@ -184,6 +219,73 @@ h1, h2, h3, h4, h5, h6 {
 /* ===================================================================================== */
 /* index.html */
 /* ===================================================================================== */
+
+.primary-heading {
+  color: #3d4251;
+  font-weight: 700;
+}
+
+.index-main-header {
+  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEFCQ1MU0/keats-header.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  height: 100vh;
+  border-bottom: 1px solid #eee;
+}
+.course-icon svg {
+  width: 22px;
+  height: 22px;
+}
+.course-name {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.keats-demo-background {
+  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEHHSLSNS/screen-keats.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px;
+}
+.make-dreams-background {
+  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEG7H0NG3/md.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px;
+}
+.how-it-works-container {
+  background: url('https://cdn.discordapp.com/attachments/346255492500160512/518082768274718745/vihar11111.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  height: 100%;
+  padding-top:40px;
+}
+.learn-icon-container {
+  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEG6WU03C/learn.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+}
+.interact-icon-container {
+  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEG6XLPH8/interact.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+}
+.acheive-icon-container {
+  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEHJTB71U/build.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100px;
+}
 .index-hero-container {
   min-height: 500px;
   height: 100vh;
