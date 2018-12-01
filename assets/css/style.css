@@ -152,6 +152,9 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(to bottom, rgba(35, 47, 62, 0.95), rgba(35, 47, 62, 0.95));
     padding: 0px 20px 0px 20px;
   }
+  .navbar-container .navbar-nav .nav-item .nav-link {
+    color: #fff;
+  }
   .btn-index-nav {
     margin-bottom: 10px;
   }
@@ -160,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 /* footer.html */
 /* ===================================================================================== */
 .footer-container {
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://files.slack.com/files-pri/T9YT0T6GG-FEJA8C23Y/footer2.jpg');
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://s3.ap-south-1.amazonaws.com/keats-app/brands/keats-footer-background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
