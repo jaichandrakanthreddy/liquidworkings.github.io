@@ -1,31 +1,57 @@
 <section>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-container">
-    <div class="container">
-      <a class="navbar-brand" href="/">
-        <img src="https://s3.ap-south-1.amazonaws.com/keats-app/brands/Keats-logo-beta-light.png" height="35px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto justify-content-end mr-5" style="width: 100%;">
-          <li class="nav-item">
-            <a href="/about" class="nav-link text-uppercase">About us</a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-link text-uppercase">how it works</a>
-          </li>
-          <li class="nav-item">
-            <a href="/partnership" class="nav-link text-uppercase">partnership</a>
-          </li>
-          <li class="nav-item">
-            <a href="/jobs" class="nav-link text-uppercase">pricing</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://web.keats.app" class="nav-link text-uppercase btn btn-index-nav">sign in</a>
-          </li>
-        </ul>
+  {% if page.value %}
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light index-navbar-container">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="https://s3.ap-south-1.amazonaws.com/keats-app/brands/Keats-logo-beta-light.png" height="35px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto justify-content-end mr-5" style="width: 100%;">
+            <li class="nav-item">
+              <a href="#howItWorks" class="nav-link text-uppercase">how it works</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about" class="nav-link text-uppercase">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="/partnership" class="nav-link text-uppercase">partnership</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://web.keats.app" class="nav-link text-uppercase btn btn-index-nav">sign in</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+    {% else %}
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-container">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="https://s3.ap-south-1.amazonaws.com/keats-app/brands/Keats-logo-beta-dark.png" height="30px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto justify-content-end mr-5" style="width: 100%;">
+            <li class="nav-item">
+              <a href="#howItWorks" class="nav-link text-uppercase">how it works</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about" class="nav-link text-uppercase">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="/partnership" class="nav-link text-uppercase">partnership</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://web.keats.app" class="nav-link text-uppercase btn btn-index-nav">sign in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% endif %}
 </section>
