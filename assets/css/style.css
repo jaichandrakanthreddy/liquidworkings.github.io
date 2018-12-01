@@ -225,8 +225,52 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+.primary-border {
+  border: 2px solid #ccc;
+}
+.secondary-border {
+  border: 2px solid #ccc;
+}
+.success-border {
+  border: 2px solid #ccc;
+}
+.danger-border {
+  border: 2px solid #ccc;
+}
+.warning-border {
+  border: 2px solid #ccc;
+}
+.info-border {
+  border: 2px solid #ccc;
+}
+
+.primary-border:hover {
+  border: 2px solid #4D8DD2;
+  cursor: pointer;
+}
+.secondary-border:hover {
+  border: 2px solid #858A8E;
+  cursor: pointer;
+}
+.success-border:hover {
+  border: 2px solid #62A471;
+  cursor: pointer;
+}
+.danger-border:hover {
+  border: 2px solid #BF6971;
+  cursor: pointer;
+}
+.warning-border:hover {
+  border: 2px solid #D2B151;
+  cursor: pointer;
+}
+.info-border:hover {
+  border: 2px solid #686B6E;
+  cursor: pointer;
+}
+
 .index-main-header {
-  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEFCQ1MU0/keats-header.jpg');
+  background: url('https://s3.ap-south-1.amazonaws.com/keats-app/brands/keats-header-background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -243,21 +287,21 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 10px;
 }
 .keats-demo-background {
-  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEHHSLSNS/screen-keats.jpg');
+  background: url('https://s3.ap-south-1.amazonaws.com/keats-app/brands/keats-demo-screen.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 450px;
 }
 .make-dreams-background {
-  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEG7H0NG3/md.png');
+  background: url('https://s3.ap-south-1.amazonaws.com/keats-app/brands/keats-make-your-dream.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 450px;
 }
 .how-it-works-container {
-  background: url('https://cdn.discordapp.com/attachments/346255492500160512/518082768274718745/vihar11111.png');
+  background: url('https://s3.ap-south-1.amazonaws.com/keats-app/brands/keats-h-i-t-container.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -266,123 +310,25 @@ h1, h2, h3, h4, h5, h6 {
   padding-top:40px;
 }
 .learn-icon-container {
-  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEG6WU03C/learn.png');
+  background: url('https://s3.ap-south-1.amazonaws.com/keats-app/brands/keats-h-i-t-learn.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
 }
 .interact-icon-container {
-  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEG6XLPH8/interact.png');
+  background: url('https://s3.ap-south-1.amazonaws.com/keats-app/brands/Keats-h-i-w-interact.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
 }
 .acheive-icon-container {
-  background: url('https://files.slack.com/files-pri/T9YT0T6GG-FEHJTB71U/build.png');
+  background: url('https://s3.ap-south-1.amazonaws.com/keats-app/brands/keats-h-i-w-acheive.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100px;
-}
-.index-hero-container {
-  min-height: 500px;
-  height: 100vh;
-}
-.index-hero-container .left-panel {
-  background-image: url('../images/keats-hero-unit.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 550px;
-}
-.index-hero-container .right-panel {
-  text-align: left;
-}
-.index-hero-container .right-panel p {
-  font-size: 18px; 
-  color: #333;
-}
-.slide-bar {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  height: 70px;
-  background-color: rgba(0, 0, 0, 0.45);
-}
-.slide-bar .left-control {
-  position: absolute;
-  height: 70px;
-  left: 80px;
-  display: none;
-}
-.slide-bar .middle-panel {
-  position: absolute;
-  height: 70px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-}
-.slide-bar .right-control {
-  position: absolute;
-  height: 70px;
-  right: 80px;
-  display: none;
-}
-.slide-bar .carousel-item {
-  height: 70px;
-  font-size: 20px;
-}
-.slide-bar .carousel-item .carousel-item-text {
-  height: 70px;
-  text-align: center;
-  line-height: 3.5;
-}
-.way-of-learn-image {
-  background-image: url('../images/student.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  min-height: 170px;
-}
-.learn-anything-image-left {
-  background-image: url('../images/responsive.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  min-height: 160px;
-  display: none;
-}
-.learn-anything-image-right {
-  background-image: url('../images/responsive.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  min-height: 160px;
-}
-.for-scholl {
-  background-image: url('../images/classroom.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  min-height: 170px;
-}
-@media (max-width: 767px) {
-  .index-hero-container .left-panel {
-    display: none;
-  }
-  .learn-anything-image-left  {
-    display: block;
-  }
-  .learn-anything-image-right {
-    display: none;
-  }
-}
-@media (max-width: 945px) {
-  .slide-bar span {
-    display: none;
-  }
 }
 /* ===================================================================================== */
 /* about.html */
